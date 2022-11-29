@@ -5,18 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:brows_DemoEkz"
         mc:Ignorable="d"
-        Title="Velvet brows" MinWidth="800" MinHeight="450" Height="450" Width="800">
+        Title="VelvetBrows" Height="700" Width="900" MinHeight="700" MinWidth="900">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>        
-        <Image Source="Resources\beauty_logo.png" HorizontalAlignment="Left"></Image>
-        <TextBlock Text="Header" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-        <Grid Background="#FFE1E4FF" Panel.ZIndex="-2"></Grid>
-        <Grid Grid.Row="2" Background="#FFE1E4FF"></Grid>
-        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"></Frame>
-        <Button Content="Back" Name="BtnBack"  HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="200*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Background="#FFE1E4FF" Orientation="Horizontal">
+                <Image Source="Resources\beauty_logo.png"
+                   Width="55" Margin="10 0 0 0" HorizontalAlignment="Left"></Image>
+                <Button x:Name="btnBack" Click="btnBack_Click"
+                Width="150" Height="30" FontSize="17"
+                Foreground="White" Background="#FFFF4A6D"
+                Margin="500 0 0 0" FontFamily="Tahoma">Назад</Button>
+                <Button x:Name="btnFaq" Click="btnFaq_Click"
+                Width="150" Height="30" FontSize="17"
+                Foreground="White" Background="#FFFF4A6D"
+                Margin="5 0 0 0" FontFamily="Tahome">FAQ</Button>
+            </StackPanel>
+            <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                <Image Source="Resources\beauty_logo.png"
+                   Opacity=".1"
+                   Width="490"></Image>
+            </StackPanel>
+            <Frame x:Name="frmMain" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+        </Grid>
     </Grid>
 </Window>

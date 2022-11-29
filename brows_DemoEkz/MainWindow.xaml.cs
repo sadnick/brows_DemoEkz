@@ -1,4 +1,6 @@
-﻿using System;
+﻿using brows_DemoEkz.AppDataFile;
+using brows_DemoEkz.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,25 +25,19 @@ namespace brows_DemoEkz
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new BrowsPage());
-            Manager.MainFrame = MainFrame;
+            ConnectOdb.conObj = new Sadyrin_BDEntities();
+            FrameObj.frameMain = frmMain;
+            frmMain.Navigate(new PageMain());
         }
 
-        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        private void btnFaq_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.GoBack();
+
         }
 
-        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            if (Manager.MainFrame.CanGoBack)
-            {
-                BtnBack.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                BtnBack.Visibility = Visibility.Hidden;
-            }
+
         }
     }
 }
