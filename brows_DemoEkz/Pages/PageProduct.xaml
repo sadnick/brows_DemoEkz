@@ -31,8 +31,8 @@
                                            x:Key="LblRed">
                                         <Style.Triggers>
                                             <DataTrigger Binding="{Binding Product.IsActive}"
-                                                         >
-                                                <Setter Property="Background"/>
+                                                         Value="0">
+                                                <Setter Property="Background" Value="White"/>
                                             </DataTrigger>
                                         </Style.Triggers>
                                     </Style>
@@ -43,7 +43,6 @@
                                                 Visibility="Hidden"
                                                 Text="{Binding MainImagePath, StringFormat=../}"
                                                 />
-
                                     <Image Source="{Binding Text, ElementName=StringImage}"
                                     Style="{StaticResource ImgSource}"/>
                                     <TextBlock Text="{Binding Title}"
