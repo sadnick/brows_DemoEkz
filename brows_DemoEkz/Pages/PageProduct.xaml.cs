@@ -25,7 +25,7 @@ namespace brows_DemoEkz.Pages
         public PageProduct()
         {
             InitializeComponent();
-            DispatcherTimer timer = new DispatcherTimer();
+            DispatcherTimer timer = new DispatcherTimer(); 
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += UpdateData;
             timer.Start();
@@ -33,9 +33,10 @@ namespace brows_DemoEkz.Pages
         public void UpdateData(object sender, object e)
         {
             var HistoryProduct = ConnectOdb.conObj.Product.ToList();
-            ListProduct.ItemsSource = HistoryProduct;
-            ListProduct.ItemsSource = ConnectOdb.conObj.Product.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
+            LictProduct.ItemsSource = HistoryProduct;
+            LictProduct.ItemsSource = ConnectOdb.conObj.Product.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
         }
+              
 
         private void BtnSalehistory_Click(object sender, RoutedEventArgs e)
         {
