@@ -33,8 +33,8 @@ namespace brows_DemoEkz.Pages
         public void UpdateData(object sender, object e)
         {
             var HistoryProduct = ConnectOdb.conObj.Product.ToList();
-            LictProduct.ItemsSource = HistoryProduct;
-            LictProduct.ItemsSource = ConnectOdb.conObj.Product.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
+            ListProduct.ItemsSource = HistoryProduct;
+            ListProduct.ItemsSource = ConnectOdb.conObj.Product.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
         }
               
 

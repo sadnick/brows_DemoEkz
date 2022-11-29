@@ -15,7 +15,7 @@
                          Width="700" 
                          Height="25" 
                          Margin="5"/>
-                <ListBox Name="LictProduct"
+                <ListBox Name="ListProduct"
                          Background="Transparent"
                          Width="650" 
                          BorderBrush="Transparent">
