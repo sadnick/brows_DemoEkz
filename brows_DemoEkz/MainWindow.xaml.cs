@@ -37,7 +37,7 @@ namespace brows_DemoEkz
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            FrameObj.frameMain.Navigate(new MainWindow());
+           
         }
     }
 }

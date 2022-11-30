@@ -23,12 +23,12 @@ namespace brows_DemoEkz.Pages
     {
         public PageEditNew(Product product)
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         public PageEditNew(Service service)
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
