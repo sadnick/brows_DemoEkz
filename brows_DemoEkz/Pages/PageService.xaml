@@ -37,9 +37,9 @@
                                         </Style.Triggers>
                                     </Style>
                                 </ListBoxItem.Resources>
+                                
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock
-                                                Name="StringImage"
+                                    <TextBlock Name="StringImage"
                                                 Visibility="Hidden"
                                                 Text="{Binding MainImagePath, StringFormat=../}"
                                                 />
@@ -47,8 +47,7 @@
                                     Style="{StaticResource ImgSource}"/>
                                     <TextBlock Text="{Binding Title}"
                                                Name="TxtnameService"
-                                               Style="{StaticResource prdctTxtb}"
-                                               />
+                                               Style="{StaticResource prdctTxtb}"/>
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="{Binding Cost}"
                                                    Style="{StaticResource prdctTxtb}"/>

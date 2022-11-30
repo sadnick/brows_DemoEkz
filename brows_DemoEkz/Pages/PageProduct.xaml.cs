@@ -45,7 +45,7 @@ namespace brows_DemoEkz.Pages
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            FrameObj.frameMain.Navigate(new PageEdit((sender as Button).DataContext as Product));
+            FrameObj.frameMain.Navigate(new PageAdd());
         }
     }
 }
