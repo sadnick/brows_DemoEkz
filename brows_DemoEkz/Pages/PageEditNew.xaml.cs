@@ -19,14 +19,14 @@ namespace brows_DemoEkz.Pages
     /// <summary>
     /// Логика взаимодействия для PageEdit.xaml
     /// </summary>
-    public partial class PageEdit : Page
+    public partial class PageEditNew : Page
     {
-        public PageEdit(Product product)
+        public PageEditNew(Product product)
         {
             InitializeComponent();
         }
 
-        public PageEdit(Service service)
+        public PageEditNew(Service service)
         {
             InitializeComponent();
         }

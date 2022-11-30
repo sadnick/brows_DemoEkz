@@ -41,7 +41,7 @@
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Name="StringImage"
                                                 Visibility="Hidden"
-                                                Text="{Binding MainImagePath, StringFormat=../}"
+                                                Text="{Binding MainImagePath, StringFormat=..//{0}}"
                                                 />
                                     <Image Source="{Binding Text, ElementName=StringImage}"
                                     Style="{StaticResource ImgSource}"/>

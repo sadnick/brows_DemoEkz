@@ -44,10 +44,11 @@ namespace brows_DemoEkz.Pages
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            FrameObj.frameMain.Navigate(new PageAdd());
+            FrameObj.frameMain.Navigate(new PageEditNew((sender as Button).DataContext as Service));
         }
 
 
     }
     
 }
+

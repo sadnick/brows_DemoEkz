@@ -8,6 +8,6 @@ namespace brows_DemoEkz.AppDataFile
 {
     internal class ConnectOdb
     {
-        public static Sadyrin_BDEntities4 conObj;
+        public static Sadyrin_BDEntities3 conObj;
     }
 }

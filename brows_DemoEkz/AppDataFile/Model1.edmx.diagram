@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="32ba94b707af44eba5b4a6c9b5edbaa9" Name="Diagram1">
+      <Diagram DiagramId="6a953de7407d4398a2868f3d371f5650" Name="Diagram1">
         <EntityTypeShape EntityType="Sadyrin_BDModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="Sadyrin_BDModel.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
         <EntityTypeShape EntityType="Sadyrin_BDModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
