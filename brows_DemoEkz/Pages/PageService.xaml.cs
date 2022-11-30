@@ -18,37 +18,36 @@ using System.Windows.Threading;
 namespace brows_DemoEkz.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageProduct.xaml
+    /// Логика взаимодействия для PageService.xaml
     /// </summary>
-    public partial class PageProduct : Page
+    public partial class PageService : Page
     {
-        public PageProduct()
+        public PageService()
         {
             InitializeComponent();
-            DispatcherTimer timer = new DispatcherTimer(); 
+            DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += UpdateData;
             timer.Start();
         }
         public void UpdateData(object sender, object e)
         {
-            var HistoryProduct = ConnectOdb.conObj.Product.ToList();
-            ListProduct.ItemsSource = HistoryProduct;
-            ListProduct.ItemsSource = ConnectOdb.conObj.Product.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
+            var HistoryService = ConnectOdb.conObj.Service.ToList();
+            ListService.ItemsSource = HistoryService;
+            ListService.ItemsSource = ConnectOdb.conObj.Service.Where(x => x.Title.StartsWith(TxtSearch.Text) || x.Description.StartsWith(TxtSearch.Text)).ToList();
         }
-              
 
         private void BtnSalehistory_Click(object sender, RoutedEventArgs e)
         {
-            FrameObj.frameMain.Navigate(new PageEdit((sender as Button).DataContext as Product));
+
         }
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            FrameObj.frameMain.Navigate(new PageEdit((sender as Button).DataContext as Product));
+
         }
+
+
     }
+    
 }
-
-        
-

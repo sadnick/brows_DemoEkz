@@ -51,6 +51,15 @@
             <Setter Property="Margin" Value="5"/>
         </Style>
 
+        <Style TargetType="TextBlock" x:Key="prdctTxtb">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
         <Style TargetType="ListBoxItem" x:Key="LblRed">
             <Style.Triggers>
                 <DataTrigger Binding="{Binding Product. IsActive}" Value="False">

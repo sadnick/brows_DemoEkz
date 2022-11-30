@@ -1,4 +1,5 @@
-﻿using System;
+﻿using brows_DemoEkz.AppDataFile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace brows_DemoEkz.Pages
         public PageMain()
         {
             InitializeComponent();
+        }
+
+        private void btnService_Click(object sender, RoutedEventArgs e)
+        {
+            FrameObj.frameMain.Navigate(new PageService());
+        }
+
+        private void btnProduct_Click(object sender, RoutedEventArgs e)
+        {
+            FrameObj.frameMain.Navigate(new PageService());
         }
     }
 }

@@ -25,7 +25,7 @@ namespace brows_DemoEkz
         public MainWindow()
         {
             InitializeComponent();
-            ConnectOdb.conObj = new Sadyrin_BDEntities();
+            ConnectOdb.conObj = new Sadyrin_BDEntities4();
             FrameObj.frameMain = frmMain;
             frmMain.Navigate(new PageMain());
         }

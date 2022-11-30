@@ -1,4 +1,5 @@
-﻿using System;
+﻿using brows_DemoEkz.AppDataFile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +21,18 @@ namespace brows_DemoEkz.Pages
     /// </summary>
     public partial class PageEdit : Page
     {
-        public PageEdit()
+        public PageEdit(Product product)
+        {
+            InitializeComponent();
+        }
+
+        public PageEdit(Service service)
         {
             InitializeComponent();
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
-        {
+        {            
 
         }
     }

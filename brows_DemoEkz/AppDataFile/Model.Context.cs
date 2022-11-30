@@ -13,10 +13,10 @@ namespace brows_DemoEkz.AppDataFile
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Sadyrin_BDEntities : DbContext
+    public partial class Sadyrin_BDEntities4 : DbContext
     {
-        public Sadyrin_BDEntities()
-            : base("name=Sadyrin_BDEntities")
+        public Sadyrin_BDEntities4()
+            : base("name=Sadyrin_BDEntities4")
         {
         }
     
