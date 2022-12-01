@@ -1,6 +1,6 @@
 # brows_DemoEkz
-# The main task of the application is to develop a system for the company "Velvet Eyebrows", which provides services to customers and sells certain products. #
-### The developed application includes: ###
+# Основной задачей приложения является разработка системы для компании «Бархатные бровки», которая оказывает услуги клиентам и продает определенные товары. #
+### Разработанное приложение включает в себя: ###
 ###### • просмотр списка услуг, ######
 ###### • добавление/удаление/редактирование данных об услугах, ######
 ###### • работа с дополнительными изображениями к услугам, ######
