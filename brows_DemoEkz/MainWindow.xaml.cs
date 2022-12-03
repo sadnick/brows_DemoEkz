@@ -30,10 +30,7 @@ namespace brows_DemoEkz
             frmMain.Navigate(new PageMain());
         }
 
-        private void btnFaq_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {

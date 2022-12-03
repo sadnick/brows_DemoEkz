@@ -11,12 +11,13 @@
     <Grid>
         <Grid>
             <ScrollViewer>
-                <StackPanel Orientation="Vertical">
-                    <TextBox Name="TxtSearch"
-                         Width="700"
+                <StackPanel Orientation="Vertical">                    
+                    <TextBlock Text="Поиск услуг:" Width="70" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TxtSearch"
+                         Width="750"
                          Height="25"
-                         Margin="5"/>
-                    <ListBox Name="ListService"
+                         />
+                    <ListBox x:Name="ListService"
                          Background="Transparent"
                          Width="650"
                          BorderBrush="Transparent">
@@ -24,13 +25,12 @@
                             <DataTemplate>
                                 <ListBoxItem
                                 BorderBrush="Black"
-                                Style="{StaticResource LblRed}"
                                 Background="White"
                                 HorizontalAlignment="Left"
                                 Width="640">
 
                                     <ListBoxItem.Resources>
-                                        <Style TargetType="ListBoxItem"
+                                        <Style TargetType="{x:Type ListBoxItem}"
                                            x:Key="LblRed">
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding Service.Title}"
@@ -40,16 +40,19 @@
                                             </Style.Triggers>
                                         </Style>
                                     </ListBoxItem.Resources>
+                                    <ListBoxItem.Style>
+                                        <StaticResource ResourceKey="LblRed"/>
+                                    </ListBoxItem.Style>
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock
-                                        Name="StringImage"
+                                        x:Name="StringImage"
                                         Visibility="Hidden"
-                                        Text="{Binding MainImagePath, StringFormat=..//{0}}"
+                                        Text="{Binding MainImagePath, StringFormat=..//\{0\}}"
                                         />
                                         <Image Source="{Binding Text, ElementName=StringImage}"
                                            Style="{StaticResource ImgService}"/>
                                         <TextBlock Text="{Binding Title}"
-                                               Name="TxtNameServe"
+                                               x:Name="TxtNameServe"
                                                Style="{StaticResource titleTxtb}"
                                                />
                                         <StackPanel Orientation="Horizontal">
@@ -71,11 +74,11 @@
                                         </StackPanel>
                                         <StackPanel Orientation="Horizontal"
                                                 HorizontalAlignment="Left">
-                                            <Button Name="BtnEdit"
+                                            <Button x:Name="BtnEdit"
                                                 Style="{StaticResource redactBtn}"
                                                 Click="BtnEdit_Click"
                                                 Content="Редактировать"/>
-                                            <Button Name="BtnSalehistory"
+                                            <Button x:Name="BtnSalehistory"
                                                 Style="{StaticResource historiBtn}"
                                                 Click="BtnSalehistory_Click"
                                                 Content="История продаж"/>
